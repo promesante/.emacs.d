@@ -8,7 +8,9 @@
     (helm-ag highlight-symbol rainbow-delimiters monokai-theme company cider)))
  '(safe-local-variable-values
    (quote
-    ((cider-ns-refresh-after-fn . "integrant.repl/resume")
+    ((cider-refresh-after-fn . "integrant.repl/resume")
+     (cider-refresh-before-fn . "integrant.repl/suspend")
+     (cider-ns-refresh-after-fn . "integrant.repl/resume")
      (cider-ns-refresh-before-fn . "integrant.repl/suspend")))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
